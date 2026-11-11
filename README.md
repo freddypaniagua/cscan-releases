@@ -29,7 +29,7 @@ Two things to expect:
 - Explains each call with the numbers, for example "Save: $2,050 now + $1,900 loss bonus = $3,950 next round, enough for a full buy."
 - Keeps your own numbers on screen while you are dead and watching a teammate.
 - Shows the result when the match ends.
-- Can draw the advice on top of the game, for one-monitor setups (new in 0.10, see below).
+- Can draw the advice on top of the game, for one-monitor setups, anywhere on the screen you drag it (new in 0.10, see below).
 - Tells you when a newer version is available.
 
 ## In-game overlay (new in 0.10)
@@ -37,12 +37,28 @@ Two things to expect:
 If you play on one monitor, CSCAN can show the advice on top of the game, so you don't have to alt-tab in the buy phase.
 
 1. Tick **Show overlay in game** at the bottom of the CSCAN window. It is off until you do.
-2. Set CS2 to **Fullscreen Windowed** (CS2 settings > Video > Display Mode). In plain Fullscreen the game may cover the overlay.
+2. Set CS2 to **Fullscreen Windowed** (CS2 settings > Video > Display Mode). In plain Fullscreen the game covers the overlay.
+3. Put it where you want it with **MOVE** (see below).
 
 A small see-through panel then appears in the buy phase with the decision, the shopping list and what you keep. It stays 10 seconds into the round, then fades out. At the end of a match it shows the result for a few seconds.
 
+### Put it where you want: the MOVE button
+
+<img src="overlay-move.png" width="244" align="right" alt="The overlay in move mode: a small dark panel tagged DRAG ME with sample advice, FULL BUY and four items with prices">
+
+The overlay starts at the middle of the right edge. That spot can cover teammates or parts of the HUD, so move it once to a place that suits your screen, for example the gap between the radar and the player pictures at the top.
+
+1. With CS2 running, alt-tab to CSCAN and click **ADVANCED**.
+2. Under **IN-GAME OVERLAY**, press **MOVE**. The overlay appears, tagged "DRAG ME".
+3. Drag it with the mouse to where you want it.
+4. Press **DONE** (the same button). CSCAN remembers the spot.
+
+Press DONE before you go back into the game: while MOVE is on, the overlay catches mouse clicks instead of letting them through. If the overlay is too big for the gap, set **Text size** to Small in the same place.
+
+### Other settings
+
 - **F8** shows or hides the overlay at any time, also in the middle of a round. While the overlay is on, CSCAN holds that key, so it no longer reaches the game. Pick another key, or **None**, under **ADVANCED > IN-GAME OVERLAY**.
-- Position, opacity and text size are in the same place. **PREVIEW** shows the panel for a few seconds so you can place it.
+- Opacity, text size and six fixed positions are in the same place. **PREVIEW** shows the panel for a few seconds.
 - The overlay is a separate window on top of the game. It injects nothing into CS2, and it is built to let mouse clicks pass through to the game.
 - Keep it off on FACEIT, ESEA and in tournaments until you have checked their rules on overlays.
 - This is the overlay's first release. If it does not show over your game or gets in the way, untick the box and CSCAN works as before.
