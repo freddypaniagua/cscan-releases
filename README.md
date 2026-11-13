@@ -6,15 +6,13 @@ CSCAN tells you what to buy each round in Counter-Strike 2. It reads your money,
 
 ## Download
 
-**[Get the latest version](https://github.com/freddypaniagua/cscan-releases/releases/latest)** (Windows 10/11, 64-bit)
+**[Download CSCAN.exe](https://github.com/freddypaniagua/cscan-releases/releases/latest/download/CSCAN.exe)** (Windows 10/11, 64-bit)
 
-1. Download `CSCAN-<version>-windows-x64.zip` from the link above.
-2. Unzip it anywhere and run `CSCAN.exe` from inside the `CSCAN` folder. Keep the files next to it together.
+That one file is the whole app. Put it anywhere and run it. There is nothing to unzip or install.
 
-Two things to expect:
+One thing to expect: the app is not code-signed yet, so Windows may show "Windows protected your PC". Click **More info**, then **Run anyway**.
 
-- The app is not code-signed yet, so Windows may show "Windows protected your PC". Click **More info**, then **Run anyway**.
-- If Windows reports a missing `VCRUNTIME140.dll` or `MSVCP140.dll`, install the Microsoft Visual C++ Redistributable (2015-2022, x64) from Microsoft.
+Older versions are on the [releases page](https://github.com/freddypaniagua/cscan-releases/releases). Up to version 0.10 the download was a zip with a folder of files; from 0.11 it is the single exe. Each release also lists a "relink kit" zip. You do not need it to use CSCAN; it is there because of the license of Qt, the toolkit CSCAN is built with.
 
 ## Setup
 
@@ -67,12 +65,12 @@ Press DONE before you go back into the game: while MOVE is on, the overlay catch
 
 - **How it gets data:** Game State Integration, a feature Valve built for outside tools. CSCAN does not read or change the game's memory and injects nothing into the game.
 - **Other platforms:** FACEIT, ESEA and tournaments have their own rules about helper tools. Check them before using CSCAN there.
-- **Privacy:** nothing about your matches leaves your PC. On start, CSCAN asks GitHub once whether a newer version exists; you can turn that off under **ADVANCED > UPDATES**.
-- **Removing it:** delete the CSCAN folder, and delete `gamestate_integration_cscan.cfg` from CS2's `game/csgo/cfg` folder.
-- **Early version:** this is version 0.10. Prices are checked by hand against the in-game buy menu and can lag behind a Valve balance update.
+- **Privacy:** nothing about your matches leaves your PC. On start, CSCAN asks GitHub once whether a newer version exists; you can turn that off under **ADVANCED > UPDATES AND ABOUT**.
+- **Removing it:** delete `CSCAN.exe`, and delete `gamestate_integration_cscan.cfg` from CS2's `game/csgo/cfg` folder.
+- **Early version:** this is version 0.11. Prices are checked by hand against the in-game buy menu and can lag behind a Valve balance update.
 
 ## About this repository
 
 This repository holds the downloads only. CSCAN's source code is not public.
 
-CSCAN is a fan-made tool. It is not affiliated with or endorsed by Valve. Counter-Strike is a trademark of Valve Corporation. Licenses for the software and fonts CSCAN is built with are included in each download, in the `licenses` folder.
+CSCAN is a fan-made tool. It is not affiliated with or endorsed by Valve. Counter-Strike is a trademark of Valve Corporation. Licenses for the software and fonts CSCAN is built with are inside the app, under **ADVANCED > ABOUT**.
